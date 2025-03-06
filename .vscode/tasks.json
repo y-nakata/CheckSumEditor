@@ -2,12 +2,31 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "buildDebug",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}\\CheckSumEditor.csproj"
+                "${workspaceFolder}/CheckSumEditor.csproj",
+                "-c",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Copilot"
+        },
+        {
+            "label": "buildRelease",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CheckSumEditor.csproj",
+                "-c",
+                "Release"
             ],
             "problemMatcher": "$msCompile",
             "group": {
