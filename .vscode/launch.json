@@ -1,0 +1,23 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net9.0/CheckSumEditor.dll",
+            "args": ["C:\\Users\\xxx\\Downloads\\rust-1.85.0-x86_64-pc-windows-msvc\\rustc\\bin\\rustc.exe"],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "logging": {
+                "moduleLoad": false
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
